@@ -13,8 +13,6 @@ export const Album = ({ name, artist, images }) => {
       return images[0].url;
     } else if (screenWidth >= 768) {
       return images[1].url;
-    } else {
-      return images[0].url;
     }
   };
   const imageUrl = chooseImageSize(images, screenWidth);
