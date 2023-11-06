@@ -10,11 +10,11 @@ export const Album = ({ name, artist, images }) => {
 
   const chooseImageSize = (images, screenWidth) => {
     if (screenWidth >= 1024) {
-      return images[0].url;
+      return images[2].url;
     } else if (screenWidth >= 768) {
       return images[1].url;
     } else {
-      return images[2].url;
+      return images[0].url;
     }
   };
   const imageUrl = chooseImageSize(images, screenWidth);
