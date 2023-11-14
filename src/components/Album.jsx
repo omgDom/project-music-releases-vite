@@ -1,6 +1,7 @@
 import { AlbumImage } from "./albumComponents/AlbumImage";
 import { AlbumName } from './albumComponents/AlbumName';
 import { ArtistsName } from './albumComponents/ArtistsName';
+import { Header } from "./Header";
 import dotsIcon from "../assets/icons/dots.svg";
 import heartIcon from "../assets/icons/heart.svg";
 import playIcon from "../assets/icons/play.svg";
@@ -11,7 +12,7 @@ export const Album = ({ name, artist, images }) => {
   const chooseImageSize = (images, screenWidth) => {
     if (screenWidth >= 1024) {
       return images[0].url;
-    } else if (screenWidth >= 768) {
+    } else if (screenWidth >= 667) {
       return images[1].url;
     }
   };
